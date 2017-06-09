@@ -16,8 +16,8 @@ product <- data.frame(
 )
 
 write.csv(product, file = "product.csv", quote = FALSE, row.names = FALSE)
-write.table(product, file='product.tsv', quote=FALSE, sep='\t', row.names = FALSE)
-openxlsx::write.xlsx(product, file="product.xlsx")
+write.table(product, file = 'product.tsv', quote = FALSE, sep='\t', row.names = FALSE)
+openxlsx::write.xlsx(product, file = "product.xlsx")
 
 
 UserID <- sample(LETTERS, M, replace = TRUE)
