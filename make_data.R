@@ -21,7 +21,7 @@ openxlsx::write.xlsx(product, file="product.xlsx")
 
 
 UserID <- sample(LETTERS, M, replace = TRUE)
-ProductID <- sample(1:1000000, M)
+ProductID <- sample(1:N, M)
 SaleDate <- sample(seq(as.Date("2010/01/01"), as.Date("2016/12/31"), by = "day"), M, replace = T)
 
 sales <- data.frame(
